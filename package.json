@@ -1,7 +1,7 @@
 {
   "name": "sedona-21",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Проект «Седона»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
