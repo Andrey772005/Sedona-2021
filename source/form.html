@@ -1,0 +1,192 @@
+<!-- A form for visitors to leave their reviews about the hotel and the sights they have visited. -->
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Туристический городок в Америке под названием Седона">
+    <meta name="keywords" content="туризм, северная америка, лучше чем гранд каньон, скалы">
+    <title>Седона</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="img/logotype-adaptive.svg">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="prefender" href="catalog.html">
+  </head>
+  <body class="page-body">
+                    <!-- Шапка -->
+    <header class="form-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="page-header__logo" href="#">
+          <img class="logo" src="img/logotype-adaptive.svg" alt="Логотип&ensp;&laquo;Седона&raquo;">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Фото и Видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="map.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-form__text">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/text-sedona-form-tablet.svg">
+          <img class="page-form--welcome" src="img/text-sedona-form.svg" alt="Добро пожаловать в Седону">
+        </picture>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/background-triangle-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/background-triangle-tablet.svg">
+          <img class="page-form--triangle" src="img/background-triangle.svg" alt="">
+        </picture>
+      </div>
+    </header>
+                              <!-- Промо -->
+    <main class="form-page">
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <section class="sedona-lead__form">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <div class="sedona-lead__wrapper">
+          <div class="sedona-lead__promo">
+            <p class="sedona-lead__main-title sedona-lead__main-title--form">Оставьте свой отзыв</p>
+            <p class="sedona-lead__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
+      </section>
+                                    <!-- Раздел "Представьтесь:"  -->
+      <section class="form-page__user">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div class="form-page__wrapper">
+          <section class="introduce-form">
+            <h2 class="introduse-form__introduce--yourself user-form">Представьтесь:</h2>
+            <div class="introduce-form__name">
+              <label class="introduce-form__your--name contact" for="name">Имя<sup>*</sup>:</label>
+              <input class="introduce-form--name input" type="text" id="name" name="name" placeholder="Петр">
+            </div>
+            <div class="introduce-form__surname">
+              <label class="introduce-form__your--name contact" for="surname">Фамилия<sup>*</sup>:</label>
+              <input class="introduce-form--surname input" type="text" id="surname" name="name" placeholder="Иванов">
+            </div>
+            <div class="introduce-form__patronymic">
+              <label class="introduce-form__your--name contact" for="patronymic">Отчество:</label>
+              <input class="introduce-form--patronymic input" type="text" id="patronymic" name="name" placeholder="Александрович">
+            </div>
+          </section>
+                                          <!-- Раздел контактная информация -->
+          <section class="contact-form">
+            <div class="contact-form__wrapper">
+              <h2 class="contact-form__contact--information user-form">Контактная информация:</h2>
+              <div class="contact-form__phone-number">
+                <label class="contact-form__your--number contact" for="phone">Контактный телефон<sup>*</sup>:</label>
+                <input class="introduce-form__phone--input" type="tel" id="phone" name="number" placeholder="Введите телефон">
+                <span class="phone-icon"><img src="img/phone.svg" alt=""></span>
+              </div>
+              <div class="contact-form__email">
+                <label class="contact-form__your--email contact" for="email">Электронная почта<sup>*</sup>:</label>
+                <input class="contact-form__email--input" type="text" id="email" name="name" placeholder="Введите e-mail">
+                <span class="email-icon"><img src="img/mail.svg" alt=""></span>
+              </div>
+            </div>
+          </section>
+                                        <!-- Раздел впечатления (impression) -->
+          <section class="impression-form">
+            <div class="impression-form__wrapper">
+              <h2 class="impression-form__general--impression user-form">Ваше общее впечатление:</h2>
+              <div class="impression-form__positive">
+                <input class="visually-hidden impression__positive--input" type="radio" id="positive" name="positive" checked>
+                <label class="impression__positive--label" for="positive">Скорее положительное</label>
+              </div>
+              <div class="impression-form__negative">
+                <input class="impression__negative--input" type="radio" id="negative" name="negative">
+                <label class="impression__negative--label" for="negative">Скорее отрицательное</label>
+              </div>
+              <div class="impression-form__difficult">
+                <input class="impression__difficult--input" type="radio" id="difficult" name="difficult">
+                <label class="impression__difficult--label" for="difficult">Затрудняюсь ответить</label>
+              </div>
+            </div>
+          </section>
+                                        <!-- Раздел посещенные достопримечательности -->
+          <section class="visited-form">
+            <div class="visited-form__wrapper">
+              <h2 class="visited-form__sights-visited user-form">Посещенные достопримечательности:</h2>
+              <div class="visited__devils-bridge">
+                <input class="visited__devils-bridge--input" type="checkbox" id="devils-bridge" name="devils-bridge" checked>
+                <label class="visited__devils-bridge--label" for="devils-bridge">Мост дьявола</label>
+              </div>
+              <div class="visited__mountain">
+                <input class="visited__mountain--input" type="checkbox" id="mountain" name="mountain" checked>
+                <label class="visited__mountain--label" for="mountain">Гора-колокол</label>
+              </div>
+              <div class="visited__park">
+                <input class="visited__park--input" type="checkbox" id="park" name="park" checked>
+                <label class="visited__park--label" for="park">Слайд-парк</label>
+              </div>
+              <div class="visited__red-rocks">
+                <input class="visited__red-rocks--input" type="checkbox" id="red-rocks" name="mountain">
+                <label class="visited__red-rocks--label" for="red-rocks">Красные скалы</label>
+              </div>
+            </div>
+          </section>
+                                        <!-- Форма эмоций -->
+          <section class="emotion-form">
+            <div class="emotion-form__wrapper">
+              <h2 class="emotion-form__your-emotion user-form">Опишите свои эмоции:</h2>
+              <form class="emotion-form--input" action="https://echo.htmlacademy.ru" method="POST">
+              <textarea  name="message" rows="10" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
+              <button class="emotion-form--button" type="button">Отправить отзыв</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer--hashtag">#VISITSEDONA</p>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button--twitter social-button" href="#">
+              <svg class="icon-twitter" width="17" height="14">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button--facebook social-button" href="#">
+              <svg class="icon-facebook" width="9" height="19">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button--youtube social-button" href="#">
+              <svg class="icon-youtube" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <p class="page-footer--website">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="icon-academy" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+.page {
+  min-width: 320px;
+  margin: auto;
+  height: auto;
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-page {
+  background-color: @white;
+}
+
+.page-body {
+  min-height: 100%;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 93.8%;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.15), -5px 0 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+// Модификатор абзацев
+.reason {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+.description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+::placeholder {
+  color: @black;
+}

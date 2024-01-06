@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Туристический городок в Америке под названием Седона">
+    <meta name="keywords" content="туризм, северная америка, лучше чем гранд каньон, скалы">
+    <title>Седона</title>
+    <link rel="preload" href="fonts/ptsans-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="img/logotype-adaptive.svg" as="image">
+    <link rel="preload" href="img/text-sedona.svg" as="image">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="prefetch" href="catalog.html">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="page-header__logo" href="#">
+          <img class="logo" src="img/logotype-adaptive.svg" alt="Логотип&ensp;&laquo;Седона&raquo;">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="page-header__text">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/text-sedona-tablet.svg">
+          <img class="page-header--welcome" src="img/text-sedona.svg" alt="Добро пожаловать в Седону">
+        </picture>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/background-triangle-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/background-triangle-tablet.svg">
+          <img class="page-header--triangle" src="img/background-triangle.svg" alt="">
+        </picture>
+      </div>
+    </header>
+                              <!-- Промо -->
+    <main class="page-main">
+      <h1 class="visually-hidden">Добро&ensp;пожаловать&ensp;в&ensp;Седону</h1>
+      <section class="sedona-lead">
+        <div class="sedona-lead__wrapper">
+          <div class="sedona-lead__description">
+            <p class="sedona-lead__main--title">Седона&thinsp;&mdash;&thinsp;небольшой<br class="carryover">&thinsp;городок&thinsp;в&thinsp;Аризоне&comma;<br class="carryover"> заслуживающий большего!</p>
+            <p class="sedona-lead__main-title--description">Рассмотрим&thinsp;5&thinsp;причин&comma;&thinsp;по&thinsp;которым<br class="carryover">&thinsp;Седона круче&comma;&thinsp;чем&thinsp;гранд&thinsp;каньон!</p>
+          </div>
+        </div>
+        <div class="real-city--triangle">
+          <img src="img/sedona-lead-bottom-triangle.svg" alt="">
+        </div>
+      </section>
+                  <!-- Основное содержимое -->
+      <section class="real-city">
+        <div class="real-city__wrapper">
+          <div class="real-city__№1">
+            <div class="real-city__description">
+              <h2 class="real-city__title title">Настоящий городок</h2>
+              <p class="real-city__reason-one reason">— №1 —</p>
+              <p class="real-city--text description">Седона не аттракцион для туристов, там<br class="real-city--carryover">течёт своя жизнь</p>
+            </div>
+            <div class="real-city__hotel-view">
+              <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x">
+                  <img class="hotel-image" src="img/photo-city@1x.webp" srcset="img/photo-city@2x.webp 2x" alt="Фотография гостиницы">
+              </picture>
+            </div>
+          </div>
+          <ul class="real-city__we-have-list">
+            <li class="real-city__house real-city__list">
+              <svg class="icon-house icon" width="39" height="36">
+                <use xlink:href="img/sprite.svg#icon-house"></use>
+              </svg>
+              <p class="real-city--subtitle subtitle">Жильe</p>
+              <p class="real-city--text text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <li class="real-city__gift real-city__list">
+              <svg class="icon-gift icon" width="32" height="38">
+                <use xlink:href="img/sprite.svg#icon-gift"></use>
+              </svg>
+              <p class="real-city--subtitle subtitle">Сувениры</p>
+              <p class="real-city--text text">Не только китайского, но и<br class="real-city__we-have-list--carryover"> местного производства!</p>
+            </li>
+            <li class="real-city__burger real-city__list">
+              <svg class="icon-burger icon" width="40" height="35">
+                <use xlink:href="img/sprite.svg#icon-burger"></use>
+              </svg>
+              <p class="real-city--subtitle subtitle">Еда</p>
+              <p class="real-city--text text">Всегда заказывайте фирменный бургер, вы не<br class="real-city__we-have-list--carryover"> разочаруетесь!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="devils-bridge">
+        <div class="devils-bridge__wrapper">
+          <div class="devils-bridge__list">
+            <h2 class="devils-bridge__title title">Там есть мост дьявола</h2>
+            <p class="devils-bridge__reason-two reason">— №2 —</p>
+            <p class="devils-bridge--description description">Да, по нему можно пройти! Если вы<br class="devils-bridge--carryover"> осмелитесь конечно</p>
+          </div>
+          <div class="devils-bridge__foto">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <img class="devils-bridge--image" src="img/photo-bridge@1x.webp" srcset="img/photo-bridge@2x.webp 2x" alt="Фотография скалы в форме моста">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="reason-345">
+        <div class="reason-345__wrapper">
+          <div class="small-area">
+            <h2 class="small-area--title title">Небольшая площадь</h2>
+            <p class="small-area__reason--three reason">— №3 —</p>
+            <p class="small-area--description description">Все интересные места находятся очень близко</p>
+          </div>
+          <div class="nice-road">
+            <h2 class="nice-road--title title">Красивая дорога</h2>
+            <p class="nice-road__reason--four reason">— №4 —</p>
+            <p class="nice-road--description description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="few-tourists">
+            <h2 class="few-tourists--title title">Мало туристов</h2>
+            <p class="few-tourists__reason--five reason">— №5 —</p>
+            <p class="few-tourists--description description">Большинство едет в гранд каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+                  <!-- Поиск отеля -->
+      <section class="hotel-search">
+        <div class="hotel-search__wrapper">
+          <h2 class="hotel-search__title">Заинтересовались?</h2>
+          <p class="hotels-search__description description">Укажите предполагаемые даты<br> поездки, и мы покажем вам лучшие<br> предложения гостиниц в Седоне</p>
+          <button class="hotel-search__button" type="button">Найти гостиницу</button>
+        </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+          <img class="hotel-search--map" src="img/map-mobile@1x.webp" srcset="img/map-mobile@2x.webp 2x" alt="Карта Аризоны">
+          <svg class="icon-marker" width="27" height="27">
+            <use xlink:href="img/sprite.svg#icon-marker"></use>
+          </svg>
+        </picture>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <p class="page-footer--hashtag">#VISITSEDONA</p>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-button--twitter social-button" href="#">
+              <svg class="icon-twitter" width="17" height="14">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button--facebook social-button" href="#">
+              <svg class="icon-facebook" width="9" height="19">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-button--youtube social-button" href="#">
+              <svg class="icon-youtube" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <p class="page-footer--website">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="icon-academy" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.form-page__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,146 @@
+.real-city__we-have-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.real-city__list {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-template-rows: 40px auto;
+  // column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.icon {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.subtitle {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  margin-top: 9px;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.text {
+  grid-column: -2 / -1;
+  grid-row: -2 / -1;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+}
+
+.real-city__house {
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    height: auto;
+    order: 1;
+  }
+}
+
+.real-city__house p:last-child {
+  @media (min-width: @tablet-width) {
+    width: 185px;
+  }
+}
+
+.real-city__gift {
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    order: 3;
+  }
+}
+
+.real-city__gift p:last-child {
+  @media (min-width: @tablet-width) {
+    width: 193px;
+  }
+}
+
+.real-city__burger {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    order: 2;
+  }
+}
+
+.icon-burger {
+  margin-top: 7px;
+}
+
+.real-city__burger p:last-child {
+  @media (min-width: @tablet-width) {
+    width: 175px;
+  }
+}
+
+.real-city__we-have-list--carryover {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
